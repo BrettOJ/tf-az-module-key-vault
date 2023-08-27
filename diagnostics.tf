@@ -9,7 +9,7 @@ locals {
 }
 
 module "diagnostics" {
-  source = "git::https://dev.azure.com/Brett-OJ/MerlionOptimised/_git/tf-module-az-diagnostic-settings?ref=master"
+  source = "git::https://github.com/BrettOJ/tf-az-module-diagnostic-settings?ref=main"
 
   log_analytics_workspace_id = var.diag_object.log_analytics_workspace_id
   diag_object                = local.diag_object
