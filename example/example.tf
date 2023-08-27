@@ -60,10 +60,10 @@ module "akv_merlion" {
     diag_object = {
     log_analytics_workspace_id = module.merlion_law.loga_output.id
     log = [
-      ["AuditEvent", true, true, 80],
+      ["AuditEvent", true, 80],
     ]
     metric = [
-      ["AllMetrics", true, true, 80],
+      ["AllMetrics", true, 80],
     ]
   }
   naming_convention_info = local.naming_convention_info
