@@ -54,8 +54,8 @@ variable "diag_object" {
   default     = null
   type = object({
     log_analytics_workspace_id = string
-    enabled_log                = list(tuple([string, bool, number]))
-    metric                     = list(tuple([string, bool, number]))
+    enabled_log                = list(tuple([string, bool, bool, number]))
+    metric                     = list(tuple([string, bool, bool, number]))
   })
 }
 
